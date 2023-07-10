@@ -1,14 +1,16 @@
 .formulario-container {
-    display: flex;
+    display: flex;/* faz os dois formulários ficarem na mesma linha*/
+    gap: 20px;/*Faz uma margem entre os dois formulários*/
+    flex-wrap: wrap;/*Prop que vai quebrar uma linha*/
     justify-content: center;
-    margin: 80px 0;
+    margin: 80px 50px;
 
 }
 .formulario-container .formulario {
-    max-width: 80%;
     background: #F7F7F7;
     box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
+    flex: 1; /*vai sinalizara ao React que os dois formularios tem direito um único espaço "flex" nesse caso por conter 2 formulários os dois terão direito à 50% do espaçamento*/
     padding: 36px 64px;
 }
 .formulario-container .formulario h2 {
